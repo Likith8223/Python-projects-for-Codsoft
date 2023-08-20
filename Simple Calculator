@@ -1,10 +1,10 @@
-from tkinter import *
+from tkinter import * 
 expression =""
 def press(num):
  global expression
  expression=expression+str(num)
  equation.set(expression)
-def equalpress():
+def equalpress(): # for the equal symbol
  try:
     global expression
     total=str(eval(expression))
