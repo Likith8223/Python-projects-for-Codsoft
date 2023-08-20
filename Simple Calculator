@@ -4,7 +4,7 @@ def press(num):
  global expression
  expression=expression+str(num)
  equation.set(expression)
-def equalpress(): # for the equal symbol
+def equalpress(): 
  try:
     global expression
     total=str(eval(expression))
