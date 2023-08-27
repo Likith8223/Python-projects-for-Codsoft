@@ -1,0 +1,117 @@
+#Code for the Rock Paper Scissors Game
+import random
+l=['Rock', 'Paper', 'Scissor']
+print('1. Rock')
+print('2. Paper')
+print('3. scissor')
+o=True
+count=0
+while(o):
+    print("---------------------")
+    n=int(input("Select number: "))
+    print("---------------------")
+    print()
+    print()
+    index=random.randint(0,2)
+    if n==1:
+        if index==0:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("it's a draw")
+            print("---------------------")
+            print("Your Score: ",count)
+        elif index==2:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("You won this round")
+            print("---------------------")
+            count=+1
+            print("Your Score: ",count)
+        elif index==1:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("You lost this round")
+            print("---------------------")
+            count=-1
+            print("Your Score: ",count)
+    elif n==2:
+        if index==0:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("You won this round")
+            print("---------------------")
+            count=+1
+            print("Your Score: ",count)
+        if index==1:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("it's a draw")
+            print("---------------------")
+            print("Your Score: ",count)
+        if index==2:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("You lost this round")
+            print("---------------------")
+            count=-1
+            print("Your Score: ",count)
+    elif n==3:
+        if index==0:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("You lost this round")
+            print("---------------------")
+            count=-1
+            print("Your Score: ",count)
+        if index==1:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("You won this round")
+            print("---------------------")
+            count=+1
+            print("Your Score: ",count)
+        if index==2:
+            print("Computer's choice: ",l[index])
+            print("---------------------")
+            print("Your choice: ",l[n-1])
+            print()
+            print()
+            print("it's a draw")
+            print("---------------------")
+            print("Your Score: ",count)
+    m=input("enter 'y' to continue, and 'n' to exit: ")
+    if m=='y':
+        o=True
+    else:
+        print("---------------------")
+        print("---------------------")
+        print()
+        print()
+        print()
+        print("Thank you for playing!")
+        print("See you again, soon....")
+        o=False
